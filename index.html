@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+    <body style="background-color: cyan">
+
+
+        <div class="row">
+            <div class="image-container"><img id="pec" src="img/hand.png" height="150" width="200"
+                img src="img/hand.png" onmouseover="this.src='img/hand2.png';"onmouseout="this.src='img/hand.png';"/></div>
+
+            <div class="image-container"><img id="tri" src="img/robot.png" height="150" width="200"
+                img src="img/robot.png" onmouseover="this.src='img/robot2.png';"onmouseout="this.src='img/robot.png';"/></div>
+            
+            <div class="image-container"><img id="mac"src="img/drone.png" height="200" width="200"
+                img src="img/drone.png" onmouseover="this.src='img/drone2.png';"onmouseout="this.src='img/drone.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="car" src="img/car.png" height="100" width="200"
+                img src="img/car.png" onmouseover="this.src='img/car2.png';"onmouseout="this.src='img/car.png';"/></div>
+
+            <div class="image-container"><img id="ali" src="img/aliens.png" height="150" width="200"
+                img src="img/aliens.png" onmouseover="this.src='img/aliens2.png';"onmouseout="this.src='img/aliens.png';"/></div>
+
+            <div class="image-container"><img id="flo" src="img/flower.png" height="200" width="200"
+                img src="img/flower.png" onmouseover="this.src='img/deadflower.png';"onmouseout="this.src='img/flower.png';"/></div>
+
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="eye" src="img/roboeye.png" height="95" width="200"
+                img src="img/roboeye.png" onmouseover="this.src='img/roboeye2.png';"onmouseout="this.src='img/roboeye.png';"/></div>
+
+            <div class="image-container"><img id="kid" src="img/child.png" height="190" width="200"
+                img src="img/child.png" onmouseover="this.src='img/child2.png';"onmouseout="this.src='img/child.png';"/></div>
+
+            <div class="image-container"><img id="mas" src="img/helmet.png" height="200" width="180"
+                img src="img/helmet.png" onmouseover="this.src='img/helmet2.png';"onmouseout="this.src='img/helmet.png';"/></div>
+        </div>
+
+        <script>
+        var sound1 = new buzz.sound("sound/peacesound.wav");
+        var sound2 = new buzz.sound("sound/robotsound.wav");
+        var sound3 = new buzz.sound("sound/dronesound.wav");
+        var sound4 = new buzz.sound("sound/carsound.wav");
+        var sound5 = new buzz.sound("sound/aliensound.wav");
+        var sound6 = new buzz.sound("sound/flowersound.wav");
+        var sound7 = new buzz.sound("sound/eyesound.wav");
+        var sound8 = new buzz.sound("sound/kidsound.wav");
+        var sound9 = new buzz.sound("sound/masksound.wav");
+
+        window.onload = function() {
+            document.getElementById('pec').addEventListener('click', function () {sound1.play();});
+            document.getElementById('tri').addEventListener('click', function () {sound2.play();});
+            document.getElementById('mac').addEventListener('click', function () {sound3.play();});
+            document.getElementById('car').addEventListener('click', function () {sound4.play();});
+            document.getElementById('ali').addEventListener('click', function () {sound5.play();});
+            document.getElementById('flo').addEventListener('click', function () {sound6.play();});
+            document.getElementById('eye').addEventListener('click', function () {sound7.play();});
+            document.getElementById('kid').addEventListener('click', function () {sound8.play();});
+            document.getElementById('mas').addEventListener('click', function () {sound9.play();});
+
+
+
+        };
+        </script>
+
+        
+
+        
+    </body>
+    
+</html>
